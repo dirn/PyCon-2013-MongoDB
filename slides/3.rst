@@ -1,0 +1,12 @@
+=======================
+Introduction to MongoDB
+=======================
+
+Common use cases for MongoDB
+============================
+
+- Metrics
+- Logging
+- Message queues
+- Blog
+- Content management
