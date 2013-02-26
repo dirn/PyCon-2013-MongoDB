@@ -1,0 +1,9 @@
+=======================
+Introduction to MongoDB
+=======================
+
+- Document-oriented
+- JSON-like
+- Dynamic schema
+- Scalable
+- Open Source
