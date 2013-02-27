@@ -1,0 +1,9 @@
+=============
+Using MongoDB
+=============
+
+Querying MongoDB
+================
+
+- find(spec, fields)
+- find_one(spec_or_id)
