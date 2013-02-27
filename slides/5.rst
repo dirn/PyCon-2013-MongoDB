@@ -1,0 +1,12 @@
+=============
+Using MongoDB
+=============
+
+PyMongo
+=======
+
+$ pip install pymongo
+
+https://github.com/mongodb/mongo-python-driver
+
+Python 2.4+
