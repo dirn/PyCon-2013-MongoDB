@@ -1,0 +1,11 @@
+=============
+Using MongoDB
+=============
+
+Connecting to MongoDB
+=====================
+
+from pymongo import MongoClient, MongoReplicaSetClient
+
+- host, port
+- URI connection string
