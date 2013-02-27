@@ -2,6 +2,9 @@
 Introduction to MongoDB
 =======================
 
+What is MongoDB?
+================
+
 - Document-oriented
 - JSON-like
 - Dynamic schema
