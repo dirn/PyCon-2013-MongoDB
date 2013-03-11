@@ -1,0 +1,15 @@
+=============
+Using MongoDB
+=============
+
+BSON
+====
+
+- Supported ypes
+- Object ID
+    - 4-byte timestamp
+    - 3-byte machine identifier
+    - 2-byte process ID
+    - 3-byte counter
+
+http://bsonspec.org/
