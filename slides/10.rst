@@ -5,9 +5,10 @@ Using MongoDB
 Updating MongoDB
 ================
 
-atomic updates vs document replacement
---------------------------------------
+upserts
+-------
 
-- Document replacement overwrites the entire document
-- Atomic updates change individual fields
-    - Examples of atomic operators
+- save(to_save)
+- update(spec, document)
+
+- find_and_modify(query, update)

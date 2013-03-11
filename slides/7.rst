@@ -2,8 +2,10 @@
 Using MongoDB
 =============
 
-Querying MongoDB
-================
+Connecting to MongoDB
+=====================
 
-- find(spec, fields)
-- find_one(spec_or_id)
+from pymongo import MongoClient, MongoReplicaSetClient
+
+- host, port
+- URI connection string

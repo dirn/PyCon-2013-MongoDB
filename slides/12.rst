@@ -2,14 +2,16 @@
 Using MongoDB
 =============
 
-Indexes
-=======
+Updating MongoDB
+================
 
-- Directional
-- Multikey indexes
-- Sparse indexes
+safe writes
+-----------
 
-- create_index(key_or_list)
-- ensure_index(key_or_list)
+- On by default with MongoClient (PyMongo 2.4)
+- Arguments
+    - w
+    - wtimeout
+    - j
 
-http://docs.mongodb.org/manual/core/indexes/
+http://docs.mongodb.org/manual/core/write-operations/

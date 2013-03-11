@@ -2,13 +2,8 @@
 Using MongoDB
 =============
 
-Updating MongoDB
+Querying MongoDB
 ================
 
-- insert(doc_or_docs)
-- save(to_save)
-- update(spec, document)
-
-- remove(spec_or_id)
-
-- find_and_modify(query, update)
+- find(spec, fields)
+- find_one(spec_or_id)

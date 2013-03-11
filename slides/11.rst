@@ -5,13 +5,9 @@ Using MongoDB
 Updating MongoDB
 ================
 
-safe writes
------------
+atomic updates vs document replacement
+--------------------------------------
 
-- On by default with MongoClient (PyMongo 2.4)
-- Arguments
-    - w
-    - wtimeout
-    - j
-
-http://docs.mongodb.org/manual/core/write-operations/
+- Document replacement overwrites the entire document
+- Atomic updates change individual fields
+    - Examples of atomic operators
