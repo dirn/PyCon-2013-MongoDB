@@ -1,0 +1,15 @@
+=============
+Using MongoDB
+=============
+
+Indexes
+=======
+
+- Directional
+- Multikey indexes
+- Sparse indexes
+
+- create_index(key_or_list)
+- ensure_index(key_or_list)
+
+http://docs.mongodb.org/manual/core/indexes/
