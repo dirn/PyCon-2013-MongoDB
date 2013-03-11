@@ -1,0 +1,13 @@
+=============
+Using MongoDB
+=============
+
+Updating MongoDB
+================
+
+atomic updates vs document replacement
+--------------------------------------
+
+- Document replacement overwrites the entire document
+- Atomic updates change individual fields
+    - Examples of atomic operators
