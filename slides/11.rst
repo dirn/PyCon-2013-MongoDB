@@ -1,0 +1,17 @@
+=============
+Using MongoDB
+=============
+
+Updating MongoDB
+================
+
+safe writes
+-----------
+
+- On by default with MongoClient (PyMongo 2.4)
+- Arguments
+    - w
+    - wtimeout
+    - j
+
+http://docs.mongodb.org/manual/core/write-operations/
