@@ -4,6 +4,7 @@
     - Quick overview of running mongod
 3. Using MongoDB
     - Installing PyMongo
+        - BSON
     - Connecting to MongoDB
     - Querying MongoDB
     - Updating MongoDB
