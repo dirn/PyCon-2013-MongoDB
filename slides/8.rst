@@ -8,4 +8,7 @@ Updating MongoDB
 - insert(doc_or_docs)
 - save(to_save)
 - update(spec, document)
+
 - remove(spec_or_id)
+
+- find_and_modify(query, update)
