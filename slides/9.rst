@@ -1,0 +1,14 @@
+=============
+Using MongoDB
+=============
+
+Updating MongoDB
+================
+
+upserts
+-------
+
+- save(to_save)
+- update(spec, document)
+
+- find_and_modify(query, update)
