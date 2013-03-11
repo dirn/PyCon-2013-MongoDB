@@ -6,11 +6,13 @@ Quick overview of running mongod
 ================================
 
 Installation
+------------
 
 - Download options
 - Installation options
 
 Running
+-------
 
 - mongod
 - mongod WITH OPTIONS
