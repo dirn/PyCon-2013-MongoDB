@@ -15,7 +15,7 @@
     - Embedded documents
 4. More advanced topics
     - Storing files with GridFS
-    - MongoDB 2.2's Aggregation Framework
+    - Aggregation Framework
     - Geospatial queries and indexes
         - 2d
         - bound queries
