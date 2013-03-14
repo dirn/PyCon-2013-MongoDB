@@ -1,0 +1,25 @@
+====================
+More advanced topics
+====================
+
+Aggregation Framework
+=====================
+
+- Operators
+    - $project
+        - include fields ``{'$project': {'spam': 1, 'eggs': 1}}``
+        - insert computed fields ``{'$project': {'combo': {'$add': ['$spam', '$eggs']}}}``
+        - rename fields ``{'$project': {'spam': '$eggs'}}``
+        - subdocuments ``{'$project': {'menu': {'spam': '$spam', 'eggs': '$eggs'}}}``
+    - $match
+        - drops documents that don't match
+    - $limit
+    - $skip
+    - $unwind
+        - returns one document for every member of an unwound array
+    - $group
+        - ``{'$group': {'_id': '$spam', 'eggs': {'$sum': '$eggs'}}}``
+    - $sort
+- Still subject to the 16MB limit
+
+http://docs.mongodb.org/manual/reference/aggregation/
