@@ -1,0 +1,11 @@
+====================
+More advanced topics
+====================
+
+Storing files with GridFS
+=========================
+
+- Chunks vs Files
+- 4MB of RAM
+- Replication and sharding
+- No OS limitations
