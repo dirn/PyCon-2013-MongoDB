@@ -1,0 +1,19 @@
+====================
+More advanced topics
+====================
+
+Geospatial queries and indexes
+==============================
+
+- 2d
+    - ``{'loc': [x, y]}``
+    - ``{'loc': {'x': x, 'y': y}}``
+- bounds
+    - [-180, 180)
+
+::
+
+    >>> collection.ensure_index([('loc', pymongo.GEO2D)])
+    >>> collection.ensure_index([('loc', pymongo.GEO2D)], min=-90, max=90)
+
+http://docs.mongodb.org/manual/core/geospatial-indexes/
