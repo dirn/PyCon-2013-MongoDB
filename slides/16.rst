@@ -1,0 +1,31 @@
+====================
+More advanced topics
+====================
+
+Storing files with GridFS
+=========================
+
+::
+
+    >>> from pymongo import MongoClient
+    >>> import gridfs
+    >>>
+    >>> db = MongoClient().gridfs_database_name
+    >>> fs = gridfs.GridFS(db)
+    >>>
+    >>> file_id = fs.put('spam and eggs')
+    >>> fs.get(file_id).read()
+    'spam and eggs'
+    >>>
+    >>> file_id = fs.put(fs.get(file_id), filename='spam', eggs='eggs')
+    >>> out = fs.get(file_id)
+    >>> out.read()
+    'spam and eggs'
+    >>> out.filename
+    u'spam'
+    >>> out.eggs
+    u'eggs'
+    >>> out.upload_date
+    datetime.datetime(2013, 3, 17, 21, 30, 0, 0)
+
+http://api.mongodb.org/python/current/examples/gridfs.html
