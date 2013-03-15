@@ -6,7 +6,7 @@ Geospatial queries and indexes
 ==============================
 
 - $near
-    - ``collection.find({'loc': {'$near': [x, y], '$maxDistance': max}})
+    - ``collection.find({'loc': {'$near': [37.3542, 121.9542], '$maxDistance': max}})
 - $within
     - circles
         - ``collection.find({'loc': {'$within': {'$center': [center, radius]}}})``
