@@ -13,4 +13,6 @@ Python 2.4+
 
 bson
 
+gridfs
+
 pymongo
