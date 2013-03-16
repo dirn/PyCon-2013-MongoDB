@@ -5,6 +5,7 @@
 3. Using MongoDB
     - Installing PyMongo
         - BSON
+        - GridFS
     - Connecting to MongoDB
     - Querying MongoDB
     - Updating MongoDB
