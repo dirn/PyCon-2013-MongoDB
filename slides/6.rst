@@ -5,7 +5,7 @@ Using MongoDB
 BSON
 ====
 
-- Supported ypes
+- Supported types
 - Object ID
     - 4-byte timestamp
     - 3-byte machine identifier
