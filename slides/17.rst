@@ -1,0 +1,31 @@
+====================
+More advanced topics
+====================
+
+Storing files with GridFS
+=========================
+
+Versioned
+
+- If more than one file matches the query, most recent determined by
+  ``uploadDate`` is returned
+
+    - Other versions can be explicity requested
+    - Exceptions in ``gridfs.errors``
+
+::
+
+    >>> fs.get_last_version(filename='pycon.png')
+    Traceback (most recent call last):
+    ...
+    NoFile: no version -1 for filename 'pycon.png'
+    >>> out = fs.get_last_version(city='Santa Clara', state='CA')
+    >>> out.read()
+    'PyCon 2013'
+    >>> fs.put('PyCon 2013 final day',  city='Santa Clara', state='CA')
+    >>> out = fs.get_version(city='Santa Clara', state='CA', version=1)
+    >>> out.read()
+    'PyCon 2013 final day'
+    >>> out = fs.get_version(city='Santa Clara', state='CA', version=0)
+    >>> out.read()
+    'PyCon 2013'
