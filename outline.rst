@@ -16,6 +16,7 @@
     - Embedded documents
 4. More advanced topics
     - Storing files with GridFS
+        - Versioned
     - Aggregation Framework
     - Geospatial queries and indexes
         - 2d
