@@ -5,14 +5,15 @@ More advanced topics
 Geospatial queries and indexes
 ==============================
 
-- $near
-    - ``collection.find({'loc': {'$near': [37.3542, 121.9542], '$maxDistance': max}})
-- $within
-    - circles
-        - ``collection.find({'loc': {'$within': {'$center': [center, radius]}}})``
-    - rectangles (lower-left, upper-right)
-        - ``collection.find({'loc': {'$within': {'$box': [[x1, y1], [x2, y2]]}}})``
-    - polygons
-        - ``collection.find({'loc': {'$within': {'$polygon': [[x1, y1], [x2, y2], [x3, y3]]}}})``
+- 2d
+    - ``{'loc': [37.3542, 121.9542]}``
+    - ``{'loc': {'x': 37.3542, 'y': 121.9542}}``
+- bounds
+    - [-180, 180)
 
-http://docs.mongodb.org/manual/applications/geospatial-indexes/
+::
+
+    >>> collection.ensure_index([('loc', pymongo.GEO2D)])
+    >>> collection.ensure_index([('loc', pymongo.GEO2D)], min=-90, max=90)
+
+http://docs.mongodb.org/manual/core/geospatial-indexes/
